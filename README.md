@@ -28,3 +28,10 @@ Usage
 
     Mac/Linux Example:
         python transfer.py "Folder 1/Folder 2/Folder 3" new_owner@example.com false
+
+    python revoke.py PATH-PREFIX DOMAIN-NAME SHOW-UNCHANGED
+        - PATH-PREFIX assumes use of "/" or "\" as appropriate for your operating system.
+        - SHOW-ALREADY-OWNER "true"|"false" (default true) to hide feedback for files already set correctly
+
+    Mac/Linux Example:
+        python revoke.py "Folder 1/Folder 2/Folder 3" example.com false
